@@ -1,0 +1,144 @@
+body{
+     max-width: 1920px;
+}
+#loginWrap{
+     border-top:8px solid #003877;
+     position: relative;
+}
+.loginBox{
+     height: 99vh;
+}
+.loginCenter{
+     max-width:400px;
+     width:100%;
+     margin:0 auto;
+     padding-top:5%;
+}
+.logo{
+     max-width: 1920px;
+     padding-top: 10px;
+     height: 70px;
+     border-bottom: 1px solid #ddd;
+}
+.logo>div{
+     width:400px;
+     margin:0 auto;
+}
+.mainLoginBox>p:first-child{
+     padding-top:30px;
+     padding-bottom: 10px;
+     font-size: 12px;
+     font-weight: 600;
+}
+.mainLoginBox a:hover{
+     opacity: 0.8;
+}
+input{
+     box-sizing: border-box;
+     width:100%;
+     height: 40px;
+     padding:16px 10px;
+     margin:4px 0;
+     border:1px solid #ccc;
+}
+input::placeholder{
+     color:#bbb;
+     font-size: 12px;
+     font-weight: 400;
+}
+.loginExecute{
+     background: #002c5f;
+     height: 40px;
+     width: 100%;
+     color:white;
+     text-align: center;
+     font-size: 17px;
+     font-weight: 500;
+     padding-top:20px;
+}
+.loginExecute:hover{
+     opacity: 0.8;
+}
+.leftText,
+.rightText{
+     font-weight: 600;
+     color:#002c5f;
+     padding:10px 0;
+}
+.leftText{
+     width:45%;
+     display: flex;
+     float: left;
+     justify-content: space-between;
+}
+.rightText{
+     float: right;
+}
+.snsIconBox{
+     display: flex;
+     justify-content: space-evenly;
+     margin-top:30%;
+}
+.snsIconBox>li:hover{
+     transition: 0.5s;
+     transform: scale(1.2);
+}
+.mainLoginBox{
+     box-sizing: border-box;
+}
+.mainLoginBox::after{
+     content: "";
+     border-top:1px solid #ccc;
+     display: block;
+     max-width:400px;
+     width: 100%;
+     margin-top:-20%;
+     
+}
+.bottomLoginBox::before{
+     content: "";
+     border-top:1px solid #ccc;
+     display: block;
+     margin-top:20%;
+     width:100%;
+}
+.bottomLoginBox>.loginCenter{
+     padding-top:3%;
+}
+.bottomLoginBox>.loginCenter>div{
+     display: flex;
+     justify-content: space-evenly;
+     margin-bottom: 10px;
+}
+.bottomLoginBox>.loginCenter>div p{
+     font-size: 13px;
+     font-weight: 700;
+     color:#003877
+}
+.bottomLoginBox>.loginCenter select{
+     width:30%;
+}
+.bottomLoginBox>.loginCenter p{
+     font-size:12px;
+     text-align: center;
+     color:#333;
+}
+/* ----------icon 사이즈--------- */
+.snsIconBox img{
+     width:35px;
+}
+.logo img{
+     width:130px;
+}
+@media screen and (max-width:767px) {
+
+}
+@media screen and (max-width:360px) {
+     .bottomLoginBox::before{
+          margin-top:25%;
+     }
+     .logo>div{
+          max-width: 360px;
+          width: 35%;
+     }
+}

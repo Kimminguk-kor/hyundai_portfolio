@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5a5ba0ce10656796c3345fccd911369f"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/fullpage.js"></script>
+    <script src="js/script.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="innerBox">
+            <h1><a href="#"><img class="navLogo" src="images/logo.jpg" alt="현대로고"></a></h1>
+            <ul id="nav">
+                <!-- <li><a href="index.html"><img class="navLogo" src="images/logo.jpg" alt="현대 로고"></a></li> -->
+                <li class="navMenu"><a href="#">모델</a></li>
+                <li class="navMenu"><a href="#">구매정보</a></li>
+                <li class="navMenu"><a href="#">멤버십&차량관리</a></li>
+                <li class="navMenu"><a href="#">이벤트</a></li>
+                <li class="navMenu"><a href="#">고객 지원</a></li>
+                <li class="navMenu"><a href="#">브랜드</a></li>
+                <li class="navMenu"><a href="intro.html">회사소개</a></li>
+                <li class="navMenu"><a href="#">SHOP</a></li>
+                <li class="navMenu iconBox"><a href="login.html">로그인<img class="userIcon" src="images/user_white.svg"
+                            alt="유저 아이콘"></a></li>
+                <li class="hamBox"><a href="#void"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="fullpage">
+        <div class="firstOnepage section">
+            <h2 class="blind">메인페이지</h2>
+            <div id="mainBanner">
+                <ul class="banner web">
+                    <li class="banner01"><img src="images/palisade01.png" alt="펠리세이드 이미지"></li>
+                    <li class="banner02"><img src="images/tucson01.png" alt="투싼 이미지"></li>
+                    <li class="banner03"><img src="images/grandeur01.jpg" alt="그랜져 이미지"></li>
+                    <li class="banner04"><img src="images/avante01.jpg" alt="아반떼 이미지"></li>
+                </ul>
+                <ul class="banner mobile">
+                    <li class="banner01"><img src="images/palisade_m01.png" alt="펠리세이드 이미지"></li>
+                    <li class="banner02"><img src="images/tucson_m01.png" alt="투싼 이미지"></li>
+                    <li class="banner03"><img src="images/grandeur_m01.png" alt="그랜져 이미지"></li>
+                    <li class="banner04"><img src="images/avante_m01.png" alt="아반떼 이미지"></li>
+                </ul>
+            </div>
+            <div class="innerBox">
+                <div class="middleContents">
+                    <div class="mainArrBox">
+                        <div><a href="#" class="leftArr"><img src="images/blackLeftArr.svg" alt="왼쪽화살표"></a></div>
+                        <div><a href="#" class="rightArr"><img src="images/blackRightArr.svg" alt="오른쪽화살표"></a></div>
+                    </div>
+                    <div class="active middleText">
+                        <div class="bannerText">
+                            <p>PALISADE</p>
+                            <p>당신의 모든 세상</p>
+                            <p>5/19 The new PALISADE 출시</p>
+                        </div>
+                        <div class="bannerBox">
+                            <a href="carmenu.html">자세히 보기</a>
+                            <a href="#">내 차 만들기</a>
+                        </div>
+                    </div>
+                    <div class="middleText tucsonText">
+                        <div class="bannerText">
+                            <p>TUCSON</p>
+                            <p>당신만의 특별한 공간</p>
+                            <p>7/13 2023 TUCSON 출시</p>
+                        </div>
+                        <div class="bannerBox">
+                            <a href="#">자세히 보기</a>
+                            <a href="#">내 차 만들기</a>
+                        </div>
+                    </div>
+                    <div class="middleText grandeurText">
+                        <div class="bannerText">
+                            <p>GRANDEUR</p>
+                            <p>성공을 새롭게 정의하다</p>
+                            <p>5/11 2022 GRANDEUR 출시</p>
+                        </div>
+                        <div class="bannerBox">
+                            <a href="#">자세히 보기</a>
+                            <a href="#">내 차 만들기</a>
+                        </div>
+                    </div>
+                    <div class="middleText">
+                        <div class="bannerText avanteText">
+                            <p>AVANTE</p>
+                            <p>세상, 달라졌다.</p>
+                            <p>3/8 2022 AVANTE 출시</p>
+                        </div>
+                        <div class="bannerBox">
+                            <a href="#">자세히 보기</a>
+                            <a href="#">내 차 만들기</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mainBottom">
+                    <ul class="pager">
+                        <li class="active">
+                            <a href="#">
+                                <p>[PALISADE]</p>
+                                <p>당신의 모든 세상</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>[TUCSON]</p>
+                                <p>당신만의 특별한 공간</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>[GRANDEUR]</p>
+                                <p>성공을 새롭게 정의하다</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>[AVANTE]</p>
+                                <p>세상, 달라졌다.</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#void" class="downBtn"><img src="images/down_ic.png" alt=""></a>
+        </div>
+        <div class="secondOnepage section">
+            <h2 class="blind">자동차소개 페이지</h2>
+            <div class="secondPageBannerImg">
+                <ul class="secondSub secondWeb">
+                    <li class="active"><img src="images/suv_main.jpg" alt=""></li>
+                    <li><img src="images/sedan_main.jpg" alt=""></li>
+                </ul>
+                <ul class="secondSub secondMobile">
+                    <li class="active"><img src="images/suv_main_m02.png" alt=""></li>
+                    <li><img src="images/sedan_main_m02.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="innerBox">
+                <div class="secondContent">
+                    <div class="secondSubBox active">
+                        <div class="mainText">당신의 열정을 닮은 드라이빙으로 여유로운 일상을 완성하다.</div>
+                        <div class="subTextBox">
+                            <p><strong>SUV</strong>는 Sport Utility Vehicle의 줄임말로 스포츠와 같은 여가생활을 즐길 수 있도록 만들어진 자동차입니다.</p>
+                            <p>지상고가 높고 견고하여 일반 도로는 물론 오프로드에서도 완벽한 주행성능을 발휘합니다.</p>
+                            <p>현대자동차의 SUV로 당신의 일상에 언제나 여유로움이 가득할 것입니다.</p>
+                        </div>
+                        <div class="subBox">
+                            <a href="#">Suv</a>
+                            <a href="#">Sedan</a>
+                        </div>
+                    </div>
+                    <div class="secondSubBox">
+                        <div class="mainText">일상을 함께하는 드라이빙 파트너를 만나다.</div>
+                        <div class="subTextBox">
+                            <p><strong>승용차</strong>는 이동 시 사용되는 기본적인 자동차를 말하며, 주로 적은 수(6명 이하)의 사람이 편안하게 이동하기 적합하게 만들어집니다.
+                            </p>
+                            <p>현대자동차의 승용으로 단순한 일상 속 드라이빙을 넘어 당신만의 든든한 라이프 파트너가 될 것입니다.</p>
+                        </div>
+                        <div class="subBox">
+                            <a href="#">Suv</a>
+                            <a href="#">Sedan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#void" class="downBtn"><img src="images/down_ic.png" alt=""></a>
+        </div>
+        <!-- third section. hyundai video -->
+        <div class="thirdPage section">
+            <div class="palisadeVideoBanner">
+                <h2 class="blind">펠레세이드 비디오 화면</h2>
+                <ul>
+                    <li><video class="palisadeVideo01" src="images/palisade_video01.mp4" controls muted loop></video>
+                    </li>
+                </ul>
+            </div>
+            <a href="#void" class="downBtn"><img src="images/down_ic.png" alt=""></a>
+        </div>
+        <!-- firthPage. eventBannerPage -->
+        <div class="firthPage section">
+            <!-- 이벤트 -->
+            <h2 class="pageName">이벤트</h2>
+            <div class="container">
+                <div class="eventBox active">
+                    <div class="card card01">
+                        <div class="imgBox">
+                            <img src="images/eventBanner01_600x480.jpg" alt="">
+                            <p>IONIQ 6에 관심있는 분이라면 누구나</p>
+                        </div>
+                        <div class="textContent">
+                            <h3>IONIQ 6에 관심있는 분이라면 누구나</h3>
+                            <p>IONIQ 6 런칭 기념, 정보 알림 서비스</p>
+                            <p>2022-07-14 ~ 2022-12-31</p>
+                            <p class="anchorBtn"><a href="#">자세히보기</a></p>
+                        </div>
+                    </div>
+                    <div class="card card02">
+                        <div class="imgBox">
+                            <img src="images/eventBanner02_600x480.jpg" alt="">
+                            <p>2022 부산국제모터쇼 이벤트</p>
+                        </div>
+                        <div class="textContent">
+                            <h3>2022 부산국제모터쇼 이벤트</h3>
+                            <p>현대자동차와 지속가능한 모빌리티 라이프!</p>
+                            <p>2022-07-15 ~ 2022-07-24 </p>
+                            <p class="anchorBtn"><a href="#">자세히보기</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="eventBox">
+                    <div class="card card01">
+                        <div class="imgBox">
+                            <img src="images/eventBanner03_600x480.jpg" alt="">
+                            <p>7월 H데이 썸머 특가 이벤트</p>
+                        </div>
+                        <div class="textContent">
+                            <h3>7월 H데이 썸머 특가 이벤트</h3>
+                            <p>즐거운 행운과 경품을 만나보세요!</p>
+                            <p>2022-07-04 ~ 2022-07-29</p>
+                            <p class="anchorBtn"><a href="#">자세히보기</a></p>
+                        </div>
+                    </div>
+                    <div class="card card02">
+                        <div class="imgBox">
+                            <img src="images/eventBanner04_600x480.png" alt="">
+                            <p>H-ear 패널 가입하고 토레타 쿠폰 받자!</p>
+                        </div>
+                        <div class="textContent">
+                            <h3>H-ear 패널 가입하고 토레타 쿠폰 받자!</h3>
+                            <p>현대차 고객 커뮤니케이션 채널 H-ear!</p>
+                            <p>2022-07-01 ~ 2022-07-31</p>
+                            <p class="anchorBtn"><a href="#">자세히보기</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="eventBox">
+                    <div class="card card01">
+                        <div class="imgBox">
+                            <img src="images/eventBanner05_600x480.jpg" alt="">
+                            <p>여름엔 캐비와 특급 할인 이벤트</p>
+                        </div>
+                        <div class="textContent">
+                            <h3>여름엔 캐비와 특급 할인 이벤트</h3>
+                            <p>블루멤버스 포인트 10,000P만 있으면!</p>
+                            <p>2022-07-04 ~ 2022-08-28 </p>
+                            <p class="anchorBtn"><a href="#">자세히보기</a></p>
+                        </div>
+                    </div>
+                    <div class="card card02">
+                        <div class="imgBox">
+                            <img src="images/eventBanner06_600x480.jpg" alt="">
+                            <p>7월 신차 구매 혜택</p>
+                        </div>
+                        <div class="textContent">
+                            <h3>7월 신차 구매 혜택</h3>
+                            <p>Hyundai Mobility카드 7월 혜택</p>
+                            <p>2022-07-01 ~ 2022-07-31</p>
+                            <p class="anchorBtn"><a href="#">자세히보기</a></p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="eventBannerArr">
+                    <div><a href="#" class="eventLeftArr"><img src="images/whiteLeftArr.svg" alt=""></a></div>
+                    <div><a href="#" class="eventRightArr"><img src="images/whiteRightArr.svg" alt=""></a></div>
+                </div>
+                <ul class="eventPager">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="fifthPage section">
+            <div class="innerBox">
+                <h2 class="testh2">회사 위치</h2>
+                <ul class="mainBox">
+                    <li class="active"><a href="#">양재동사옥</a></li>
+                    <li><a href="#">영동대로사옥</a></li>
+                    <li><a href="#">원효로사옥</a></li>
+                </ul>
+                <div class="mapBox">
+                    <div id="map" class="classBox active"></div>
+                    <script src="js/kakaomap.js"> </script>
+                    <div id="map2" class="classBox"></div>
+                    <script src="js/kakaomap2.js"></script>
+                    <div id="map3" class="classBox"></div>
+                    <script src="js/kakaomap3.js"></script>
+                </div>
+            </div>
+        </div>
+        <div class="section fp-auto-height fp-table">
+            <div class="innerBox">
+                <div class="topFooter">
+                    <div class="footerLogo">
+                        <a href="#"><img src="images/logo_footer.jpg" alt="현대자동차 로고"></a>
+                    </div>
+                    <div class="footerMiddleText">
+                        <div class="footerList">
+                            <p><a href="#">모바일 App</a></p>
+                            <p><a href="#">저작권 안내</a></p>
+                            <p><a href="#">개인정보 처리방침</a></p>
+                            <p><a href="#">이용약관</a></p>
+                        </div>
+                        <div class="footerList">
+                            <p><a href="#">윤리경영 사이버 감사실</a></p>
+                            <p><a href="#">영상정보처리기기 운영관리방침</a></p>
+                            <p><a href="#">사이트맵</a></p>
+                        </div>
+                        <div class="footerLastText">
+                            <p>고객센터 : 080-600-6000(승용), 080-200-6000(상용)</p><br>
+                            <p>COPYRIGHT ⓒ HYUNDAI MOTOR COMPANY. ALL RIGHTS RESERVED.</p>
+                        </div>
+                    </div>
+                    <div class="footerSnsBox">
+                        <p><a href="#"><img src="images/facebook.svg" alt="페이스북"></a></p>
+                        <p><a href="#"><img src="images/blog.svg" alt="블로그"></a></p>
+                        <p><a href="#"><img src="images/instagram.svg" alt="인스타그램"></a></p>
+                        <p><a href="#"><img src="images/kakao.svg" alt="카카오"></a></p>
+                    </div>
+                </div>
+                <div class="bottomFooter">
+                    <div class="bottomFooterFirst">
+                        <div><img src="images/footer-mark001.png" alt="웹 접근성 품질인증"><span>웹 접근성 품질인증</span></div>
+                        <div><img src="images/footer-mark002.png" alt="우수디자인 지식경제부선정"><span>우수디자인 지식경제부선정</span>
+                        </div>
+                        <div><img src="images/footer-mark003.png" alt="가족친화 우수기관"><span>가족친화 우수기관</span></div>
+                    </div>
+                    <div class="bottomFooterSecond">
+                        <div><img src="images/footer-mark004.png" alt="2022년 국가고객만족도">
+                            <span>2022년 국가고객만족도 (NCSI) 자동차기업 최초 조사대상 전부문 9년 연속 1위 수상 (준중형, 중형, 준대형)</span>
+                        </div>
+
+                        <div><img src="images/footer-mark005.png" alt="2021년 고객만족도">
+                            <span>2021년 한국산업의 고객만족도 (KCSI) 일반승용차 부문 28년 연속 1위 RV승용차 부문 18년 연속 1위</span>
+                        </div>
+                        <div><img src="images/footer-right-mark01.png" alt="웹 접근성 품질인증">
+                            <span>2021년 한국서비스품질지수 (KS -SQI) 자동차 A/S 부문 7년 연속 1위</span>
+                        </div>
+                        <div><img src="images/footer-right-mark02.png" alt="웹 접근성 품질인증">
+                            <span>2021년 한국품질만족지수 (KS -QEI) 조사 12개 부문 1위</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var myFull = new fullpage("#fullpage", {
+            navigation: true,
+            navigationTooltips: ["메인페이지", "제품소개", "상품동영상", "이벤트", "찾아오는길"],
+            showActiveTooltip: true,
+        })
+    </script>
+</body>
+
+</html>

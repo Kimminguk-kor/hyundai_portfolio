@@ -1,0 +1,1025 @@
+.innerBox {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-width: 1200px;
+  height: 70px;
+  width: 100%;
+  z-index: 10;
+  padding-left:12%;
+  background: rgb(255, 255, 255, 0.3);
+  border-radius: 20px;
+}
+#nav li {
+  box-sizing: border-box;
+  padding: 25px 20px 0;
+}
+#nav li > a {
+  font-size: 16px;
+  color: white;
+  text-shadow: 0.5px 1px 0.5px rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+}
+
+.navLogo {
+  z-index: 1000;
+  position: absolute;
+  top: 3.5%;
+}
+#nav .iconBox {
+  text-indent: -9999px;
+}
+#nav .userIcon {
+  width: 30px;
+  position: absolute;
+  right: 0%;
+}
+#nav > li:hover > a {
+  color: rgb(172, 172, 172);
+}
+.hamBox {
+  display: none;
+  margin-top: -1.5%;
+}
+/* animation arrowBtn */
+.downBtn {
+  position: absolute;
+  bottom: 1%;
+  z-index: 1000;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-name: downBtn;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-radius: 50%;
+  box-shadow: 0px 3px 3px white;
+}
+
+@keyframes downBtn {
+  0% {
+    opacity: 0.3;
+    bottom: 5px;
+  }
+
+  100% {
+    opacity: 1;
+    bottom: 20px;
+  }
+}
+/* -----------메인배너------------ */
+
+#mainBanner {
+  position: absolute;
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.banner > li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+}
+.banner > li:first-child {
+  display: block;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+.mobile{
+  display: none;
+}
+/* -------------메인배너 innerBox텍스트------------- */
+
+#onePage .innerBox {
+  width: 100%;
+  height: 100%;
+}
+.firstOnepage {
+  position: relative;
+}
+.middleContents .middleText {
+  display: none;
+}
+.middleContents .middleText.active {
+  display: block;
+}
+.middleContents {
+  position: relative;
+}
+.bannerText {
+  position: absolute;
+  z-index: 100;
+  top: 20vh;
+  left: 0;
+}
+.bannerText > p:nth-child(1) {
+  font-size: 64px;
+  font-weight: 700;
+}
+.bannerText > p:nth-child(2) {
+  font-size: 32px;
+  padding: 15px 0;
+  font-weight: 600;
+}
+.bannerText > p:nth-child(3) {
+  font-size: 20px;
+  font-weight: 500;
+}
+.avanteText > p {
+  color: white;
+}
+.bannerBox {
+  position: absolute;
+  display: flex;
+  z-index: 1000;
+  height: 50px;
+  top: 70vh;
+  left: 0%;
+  padding-bottom: 10px;
+}
+.bannerBox > a {
+  display: block;
+  width: 120px;
+  height: 40px;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+  background: #002c5f;
+}
+.bannerBox > a:first-child {
+  margin-right: 10px;
+}
+
+/* ----------.mainBottom .pager---------- */
+
+.mainBottom {
+  position: absolute;
+  justify-content: flex-start;
+  width: 100%;
+  z-index: 1000;
+  top: 84vh;
+  padding: 10px 0;
+}
+.pager {
+  display: flex;
+}
+.pager > li {
+  width: 25%;
+  font-size: 14px;
+  padding: 0 0 15px 20px;
+  border-bottom: 2px solid rgb(134, 134, 134);
+}
+.pager > li.active {
+  border-bottom: 2px solid white;
+}
+
+.pager > li.active > a {
+  color: rgb(255, 255, 255);
+  text-shadow: 0.5px 1px 0.5px rgba(0, 0, 0, 0.8);
+}
+.mainArrBox {
+  position: absolute;
+  display: flex;
+  right: 0;
+  z-index: 1000;
+  top: 80vh;
+}
+.mainArrBox div {
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* --------------secondSection-common-page---------------- */
+
+.secondOnepage {
+  position: relative;
+  max-width: 1920px;
+}
+.secondPageBannerImg img {
+  position: absolute;
+  width: 100%;
+  max-height: 650px;
+}
+.secondMobile{
+  display: none;
+}
+.secondSub > li {
+  display: none;
+}
+.secondSub > li.active {
+  display: block;
+}
+.secondContent > .secondSubBox {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.secondContent > .secondSubBox.active {
+  display: block;
+}
+.subTextBox {
+  position: absolute;
+  background: black;
+  max-height: 300px;
+  height: 100%;
+  width: 100%;
+  top: 75%;
+  text-align: center;
+}
+.secondSubBox > .mainText {
+  position: absolute;
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  word-break: keep-all;
+}
+.subTextBox > p {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 0;
+  color: rgb(211, 211, 211);
+  word-break: keep-all;
+}
+.subBox {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 55%;
+  box-sizing: border-box;
+}
+.subBox > a {
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  font-size: 15px;
+  color: white;
+  background: #002c5f;
+  width: 140px;
+  height: 40px;
+}
+.subBox > a:first-child {
+  margin-right: 10px;
+}
+
+/* -------------thirdSection_video--------------- */
+.thirdPage {
+  max-width: 1920px;
+  width: 100%;
+}
+ul > li > .palisadeVideo01 {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+/* -----------------firthPage. eventBannerPage--------------------- */
+
+.firthPage {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(rgb(80, 80, 80), black);
+}
+.pageName {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: white;
+}
+.container {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 30px;
+}
+.container > .eventBox {
+  transition: 1s;
+  opacity: 0;
+}
+.container > .eventBox.active {
+  opacity: 1;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 55%;
+  border-bottom: 3px solid white;
+}
+.container .card {
+  position: absolute;
+  width: 45%;
+  height: 35%;
+  border-radius: 20px;
+  background: rgb(240, 240, 240);
+  top: 5%;
+  margin: 30px 20px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  display: flex;
+  transition: 0.4s;
+}
+.container .card01 {
+  left: 0;
+}
+.container .card02 {
+  right: 0;
+}
+.container .card01:hover,
+.container .card02:hover {
+  z-index: 100;
+  width: 100%;
+  height: 40%;
+}
+.container .card01:hover img,
+.container .card02:hover img {
+  width: 50%;
+  position: absolute;
+  left: -10%;
+}
+.container .card .anchorBtn {
+  cursor: pointer;
+  z-index: 1000;
+}
+.container .card01:hover + .card02 {
+  opacity: 0;
+}
+.imgBox {
+  position: relative;
+}
+.imgBox p {
+  position: absolute;
+  width: 100%;
+  top: -20%;
+  left: 5%;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  transition: 0.5s;
+}
+.container .card .imgBox {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.container .card .imgBox img {
+  align-items: center;
+  max-width:600px;
+  width: 100%;
+  border-radius: 20px;
+}
+.container .card .textContent {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.container .card:hover .textContent {
+  width: 49%;
+  left: 0;
+  margin-left: 50%;
+}
+.textContent > p {
+  padding: 8px 0;
+}
+.container .card .textContent h3 {
+  font-size: 22px;
+  color: rgb(134, 134, 134);
+}
+.container .card .textContent p:nth-child(2) {
+  font-size: 28px;
+  font-weight: 700;
+}
+.container .card .textContent p:nth-child(3) {
+  font-size: 18px;
+}
+.container .card .textContent p:nth-child(4) {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+  width: 120px;
+  height: 25px;
+  background: #002c5f;
+}
+.container .card .textContent p:nth-child(4) > a {
+  color: white;
+  line-height: 25px;
+}
+
+.container .card:hover .textContent {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+.container .card:hover .imgBox p {
+  opacity: 0;
+}
+.container .eventPager {
+  position: absolute;
+  top: 60%;
+  z-index: 10000;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container .eventPager > li {
+  display: inline-block;
+  margin: 0 20px;
+  border-radius: 10px;
+  left: 50%;
+  background: white;
+}
+.container .eventPager > li > a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  text-indent: -9999px;
+  transition: 1s;
+}
+.container .eventPager > li.active > a {
+  width: 40px;
+  background: #002c5f;
+  border: 1px solid white;
+  border-radius: 10px;
+  z-index: 10000;
+}
+.eventBannerArr {
+  position: relative;
+  width: 35%;
+  top: 60%;
+  margin: 0 auto;
+}
+.eventBannerArr > div:first-child {
+  position: absolute;
+  left: -15%;
+}
+.eventBannerArr > div:last-child {
+  position: absolute;
+  right: -15%;
+}
+
+/* ----------fifthPage Section--------- */
+
+.fifthPage {
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  background: rgb(36, 36, 36);
+}
+.fifthPage h2 {
+  position: absolute;
+  color: white;
+  top: 12vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 26px;
+  font-weight: 600;
+}
+.innerBox > .mainBox {
+  position: absolute;
+  display: flex;
+  top: 20vh;
+  width: 94%;
+  margin:0 3%;
+}
+.innerBox > .mainBox > li {
+  text-align: center;
+  width: calc(100% / 3);
+  background: #002c5f;
+  line-height: 50px;
+}
+.innerBox > .mainBox > li > a {
+  display: block;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+.mainBox > li.active > a {
+  display: block;
+  background: white;
+  color: black;
+}
+#map,
+#map2,
+#map3 {
+  position: absolute;
+  top: 32vh;
+  max-width: 1200px;
+  width: 94vw;
+  height: 60vh;
+  margin:0 3%;
+}
+.mapBox > div {
+  opacity: 0;
+}
+.mapBox > div.active {
+  opacity: 1;
+}
+/* ---------footer---------- */
+.section {
+  background: black;
+}
+.fp-section .topFooter {
+  height: 180px;
+  display: flex;
+  padding: 40px 0;
+}
+.topFooter > .footerLogo {
+  margin-right: 9%;
+}
+.footerMiddleText {
+  width: 60%;
+  color: #808080;
+  font-weight: 400;
+}
+.footerMiddleText > div {
+  display: flex;
+  padding: 15px 0;
+}
+.footerMiddleText > div > p {
+  margin-right: 20px;
+}
+
+.footerMiddleText > div > p > a {
+  color: #808080;
+  font-weight: 400;
+}
+.footerMiddleText > div > p > a:hover {
+  color: white;
+}
+.footerMiddleText > div:nth-child(1),
+.footerMiddleText > div:nth-child(2) {
+  display: flex;
+}
+
+.footerMiddleText > div:nth-child(1) {
+  padding-top: 0;
+}
+.footerMiddleText > div:nth-child(2) {
+  padding-bottom: 20px;
+}
+.footerMiddleText > div:nth-child(3) {
+  padding-bottom: 5px;
+  display: block;
+}
+
+.footerLastText > p {
+  width: 100%;
+}
+.topFooter > .footerSnsBox {
+  position: absolute;
+  right: 0;
+}
+.topFooter > .footerSnsBox > p {
+  padding: 0 5px;
+}
+.topFooter > .footerSnsBox > p:nth-child(2) a {
+  display: block;
+  width: 30px;
+  border-radius: 8px;
+  background: white;
+}
+.footerSnsBox {
+  display: flex;
+}
+.fp-section .bottomFooter {
+  height: 250px;
+  position: relative;
+  padding-top: 60px;
+  border-top: 1px solid grey;
+}
+.bottomFooter span {
+  color: #808080;
+  font-size: 13px;
+  font-weight: 400;
+}
+.bottomFooter > .bottomFooterFirst {
+  display: flex;
+  justify-content: space-between;
+}
+.bottomFooterFirst > div {
+  display: inline-block;
+  width: 33%;
+}
+.bottomFooterFirst span {
+  margin-left: 5px;
+}
+
+.bottomFooter > .bottomFooterSecond {
+  padding-top: 10px;
+  right: 0;
+  width: 100%;
+  display: flex;
+}
+.bottomFooterSecond span {
+  display: inline-block;
+  width: 75%;
+}
+.bottomFooterSecond > div {
+  padding-right: 20px;
+  text-align: left;
+}
+.bottomFooterSecond > div:last-child {
+  padding-right: 0;
+}
+/* ---------svgIcon---------- */
+
+.mainArrBox img {
+  width: 15px;
+}
+.secondArrBox img {
+  width: 15px;
+  height: 15px;
+}
+.eventBannerArr img {
+  width: 15px;
+}
+.footerSnsBox img {
+  width: 30px;
+}
+.hamIcon {
+  width: 25px;
+  /* margin-right: 50px; */
+}
+
+/* -----1280반응형----- */
+@media screen and (max-width: 1280px) {
+  .navMenu {
+    display: none;
+  }
+  .innerBox {
+    display: block;
+  }
+  #nav .iconBox {
+    text-indent: 0;
+  }
+  .userIcon {
+    display: none;
+  }
+  #nav {
+    position: fixed;
+    display: block;
+    right: 5%;
+    top: 10%;
+    background: #002c5f;
+    text-align: center;
+    width: 25%;
+    height: 0;
+    line-height: 20px;
+    z-index: 1000;
+    padding-left:0%;
+  }
+  #nav > li {
+    background: #002c5f;
+    padding: 15px;
+    transition: 1s;
+  }
+  #nav > .hamBox {
+    padding: 0;
+  }
+  .hamBox>a{
+    display: block;
+    width:32px;
+    height:32px;
+    background-image: url(../images/ham1.png);
+  }
+  .hamBox>.active{
+    background-image: url(../images/ham_close1.png);
+  }
+  .navLogo{
+    background: rgb(255, 255, 255, 0.35);
+    border-radius: 20%;
+  }
+  #nav>.hamBox {
+    position: fixed;
+    display: block;
+    top: 4.5%;
+    right: 5%;
+    width: 45px;
+    height: 45px;
+    padding:6px;
+    background: rgb(255, 255, 255, 0.9);
+    border-radius: 10px;
+  }
+  .hamBox .hamIcon {
+    padding: 8px;
+  }
+  .secondSubBox > .mainText {
+    font-size: 30px;
+  }
+  .subTextBox {
+    top: 70%;
+  }
+  .subTextBox > p {
+    font-size: 16px;
+  }
+  .container .card .imgBox {
+    width: 70%;
+  }
+  .container .card:hover img{
+    width:55%;
+  }
+  .imgBox p {
+    display: none;
+  }
+  .container .card {
+    height: 35%;
+  }
+  .container .card .textContent {
+    top: 20%;
+  }
+  .container .card .textContent h3 {
+    font-size: 18px;
+  }
+  .container .card .textContent p:nth-child(2) {
+    font-size: 24px;
+  }
+  .container .card .textContent p:nth-child(3) {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .container .card .textContent h3 {
+    font-size: 16px;
+  }
+  .container .card .textContent p:nth-child(2) {
+    font-size: 22px;
+  }
+  .container .card .textContent p:nth-child(3) {
+    font-size: 13px;
+  }
+  .container .card .textContent p:nth-child(4) {
+    width: 100px;
+    height: 20px;
+    line-height: 15px;
+    font-size: 12px;
+  }
+  
+  .secondPageBannerImg img{
+    height: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #nav {
+    width: 30%;
+    line-height: 10px;
+  }
+  #nav > .navMenu a {
+    font-size: 12px;
+  }
+  .bannerText > p:nth-child(1) {
+    font-size: 50px;
+  }
+  .bannerText > p:nth-child(2) {
+    font-size: 28px;
+  }
+  .bannerText > p:nth-child(3) {
+    font-size: 18px;
+  }
+  .tucsonText > .bannerText > p,
+  .grandeurText > .bannerText > p {
+    color: white;
+    text-shadow: 0px 1px 0.5px rgba(0, 0, 0, 0.8);
+  }
+
+  .bannerBox > a {
+    font-size: 12px;
+    width: 90px;
+    height: 30px;
+    padding-top: 5px;
+  }
+  .pager > li {
+    font-size: 13px;
+  }
+  .pager a > p:nth-child(2) {
+    display: none;
+  }
+  .secondSubBox > .mainText {
+    font-size: 22px;
+  }
+  .subTextBox > p {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .container::after{
+    display: none;
+  }
+  .container .card {
+    top: 10%;
+    height: 25%;
+  }
+  .container .card01:hover,
+  .container .card02:hover {
+    z-index: 100;
+    width: 95%;
+    height: 25%;
+  }
+  .container .card01:hover img,
+  .container .card02:hover img {
+    width: 60%;
+  }
+  .container .card .textContent {
+    top: 20%;
+  }
+  .container .card .textContent h3 {
+    font-size: 14px;
+  }
+  .container .card .textContent p:nth-child(2) {
+    font-size: 16px;
+  }
+  .container .card .textContent p:nth-child(4) {
+    width: 80px;
+    height: 20px;
+  }
+  .container .eventPager {
+    top: 55%;
+  }
+  .eventBannerArr{
+    top:55%;
+    padding:0 20px;
+  }
+  .container .eventPager > li > a {
+    width: 10px;
+    height: 10px;
+  }
+  .container .eventPager > li.active > a {
+    width: 30px;
+  }
+  .innerBox > .mainBox > li {
+    line-height: 30px;
+    margin-top:1.5%;
+  }
+  .innerBox > .mainBox > li > a {
+    height: 30px;
+    font-size: 14px;
+  }
+  
+  #map,
+  #map2,
+  #map3 {
+    position: absolute;
+    top: 32vh;
+    max-width: 720px;
+    width: 94vw;
+    height: 55vh;
+    margin:0 3%;
+}
+  .bottomFooter {
+    display: none;
+  }
+  .topFooter > .footerLogo {
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translateX(-50%);
+    padding-top: 10px;
+  }
+  .fp-section .topFooter {
+    height: 300px;
+  }
+  .footerMiddleText {
+    width: 100%;
+    text-align: center;
+  }
+  .footerMiddleText > .footerList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 13%;
+    box-sizing: border-box;
+  }
+  .footerList > p {
+    width: 40%;
+    text-align: center;
+    padding: 5px 0;
+  }
+  .topFooter > .footerSnsBox {
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .footerMiddleText > div {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 560px) {
+  .container .card .textContent h3 {
+    font-size: 13px;
+  }
+  .container .card .textContent p:nth-child(2) {
+    font-size: 14px;
+  }
+  .container .card01:hover,
+  .container .card02:hover {
+    z-index: 100;
+    width: 70%;
+    height: 25%;
+    margin:0 15%;
+  }
+  .container .card:hover .textContent {
+    width: 80%;
+    left: 0;
+    margin-left: 12%;
+  }
+  .container .card01:hover img,
+  .container .card02:hover img{
+    display: none;
+  }
+}
+@media screen and (max-width: 360px) {
+  #nav {
+    width: 90%;
+    text-align: center;
+    padding-left:0;
+  }
+  .web{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  .mainArrBox div {
+    padding: 3px;
+  }
+  .secondWeb{
+    display: none;
+  }
+  .secondMobile{
+    display: block;
+  }
+  .subTextBox{
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+  .container .card:hover .textContent {
+    width: 80%;
+    left: 0;
+    margin-left: 12%;
+  }
+  .container .card .imgBox {
+    top: -30%;
+    width:85%;
+  }
+  .container .card{
+    height: 20%;
+  }
+  .container .card img{
+    height: 110%;
+  }
+  .container .card .textContent h3{
+    font-size:10px;
+  }
+  .container .card .textContent>p:nth-child(2){
+    font-size:13px;
+  }
+  .container .eventPager{
+    top:44.5%;
+  }
+  ul > li > .palisadeVideo01 {
+    width: 100vw;
+    height: 30vh;
+    object-fit:cover;
+    position: absolute;
+    top:35%;
+  }
+}
