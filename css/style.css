@@ -16,7 +16,6 @@
   padding-left:12%;
   background: rgb(255, 255, 255, 0.3);
   border-radius: 20px;
-  /* test */
 }
 #nav li {
   box-sizing: border-box;
@@ -515,7 +514,7 @@ ul > li > .palisadeVideo01 {
   position: absolute;
   display: flex;
   top: 20vh;
-  width: 94%;
+  width: 100%;
   margin:0 3%;
 }
 .innerBox > .mainBox > li {
@@ -773,6 +772,11 @@ ul > li > .palisadeVideo01 {
   }
   .container .card .textContent p:nth-child(3) {
     font-size: 14px;
+  }
+}
+@media screen and (max-width:1230px) {
+  .innerBox > .mainBox {
+    width: 94%;
   }
 }
 @media screen and (max-width: 850px) {

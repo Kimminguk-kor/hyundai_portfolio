@@ -669,7 +669,7 @@ header {
     display: block;
   }
   .hgaBoxMobile .hgaSubBoxText {
-    width: 100%;
+    width: 90%;
   }
   .hgaBoxMobile .hgaSubTitle > p:nth-child(2),
   .appear1200 {
@@ -749,6 +749,9 @@ header {
     text-align: center;
     padding-left: 0;
   }
+  #nav>.hamBox {
+    top: 3%;
+  }
   .container > .mainTopText {
     padding-top: 5px;
     height: 40px;
@@ -768,7 +771,7 @@ header {
     transform: translateY(18%);
   }
   .innerSecondBox {
-    height: 60px;
+    height: 80px;
     padding-bottom: 40px;
   }
   .secondBox {
@@ -804,7 +807,10 @@ header {
   .pager02 > div,
   .pager03 > div {
     padding: 5px;
-    font-size: 12px;
+    font-size: 11px;
+  }
+  .innerSecondBox:first-child{
+    margin: 10% 0 10%;
   }
   .bottomText {
     display: none;
@@ -822,7 +828,6 @@ header {
     font-size: 28px;
   }
   .innerSecondBox > .hgaFirst {
-    /* font-size:28px; */
     padding-bottom: 10px;
   }
 }
