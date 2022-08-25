@@ -6,7 +6,10 @@ $(function(){
         .siblings().fadeOut(500);
         $(".pagerWrap01>.pagerText01").eq(menuBanner01).addClass("active")
         .siblings().removeClass("active");
-        $(".menuBoxPager>div").eq(menuBanner01).addClass("active")
+        // web버전 mobile버전
+        $(".secondImg>.web>div").eq(menuBanner01).addClass("active")
+        .siblings().removeClass("active");
+        $(".secondImg>.mobile>div").eq(menuBanner01).addClass("active")
         .siblings().removeClass("active");
     }
     $(".pager01>div").click(function(){
@@ -37,7 +40,10 @@ $(function(){
         .siblings().fadeOut(500);
         $(".pagerWrap02>.pagerText02").eq(menuBanner02).addClass("active")
         .siblings().removeClass("active");
-        $(".pager02>div").eq(menuBanner02).addClass("active")
+        // web버전 mobile버전
+        $(".secondImg>.webMove>div").eq(menuBanner02).addClass("active")
+        .siblings().removeClass("active");
+        $(".secondImg>.mobileMove>div").eq(menuBanner02).addClass("active")
         .siblings().removeClass("active");
     }
     $(".pager02>div").click(function(){
@@ -68,7 +74,10 @@ $(function(){
         .siblings().fadeOut(500);
         $(".pagerWrap03>.pagerText03").eq(menuBanner03).addClass("active")
         .siblings().removeClass("active");
-        $(".pager03>div").eq(menuBanner03).addClass("active")
+        // web버전 mobile버전
+        $(".secondImg>.mobileMove02>div").eq(menuBanner03).addClass("active")
+        .siblings().removeClass("active");
+        $(".secondImg>.webMove02>div").eq(menuBanner03).addClass("active")
         .siblings().removeClass("active");
     }
     $(".pager03>div").click(function(){
