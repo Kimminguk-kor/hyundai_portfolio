@@ -22,7 +22,8 @@
   width:100%;
   height: 70px;
   border-radius: 20px;
-  left:17%;
+  left:50%;
+  transform: translateX(-50%);
 }
 #nav li {
   box-sizing: border-box;
@@ -732,7 +733,8 @@ ul > li > .palisadeVideo01 {
   }
   .navLogo{
     background: rgb(255, 255, 255, 0.35);
-    border-radius: 20%;
+    border-radius: 15%;
+    padding:0 10px;
   }
   #nav>.hamBox {
     position: fixed;
@@ -747,6 +749,9 @@ ul > li > .palisadeVideo01 {
   }
   .hamBox .hamIcon {
     padding: 8px;
+  }
+  #nav::after{
+    display: none;
   }
   .secondSubBox > .mainText {
     font-size: 30px;
