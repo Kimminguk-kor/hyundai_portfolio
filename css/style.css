@@ -985,8 +985,11 @@ ul > li > .palisadeVideo01 {
   #nav {
     width: 90%;
     text-align: center;
-    padding-left:0;
     top:13%;
+    padding-left:0;
+  }
+  #nav>.hamBox{
+    top:3%;
   }
   .web{
     display: none;
@@ -1013,6 +1016,7 @@ ul > li > .palisadeVideo01 {
   .container .card:hover .textContent {
     width: 80%;
     left: 0;
+    top:15%;
     margin-left: 12%;
   }
   .container .card .imgBox {
@@ -1033,6 +1037,9 @@ ul > li > .palisadeVideo01 {
   }
   .container .eventPager{
     top:44.5%;
+  }
+  .eventBannerArr{
+    top:43%;
   }
   ul > li > .palisadeVideo01 {
     width: 100vw;
