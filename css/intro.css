@@ -40,6 +40,7 @@ header {
 
 #nav li>a {
   font-size: 16px;
+  color: black;
   font-weight: 500;
 }
 
@@ -442,7 +443,7 @@ section {
 }
 
 .hamIcon {
-  width: 25px;
+  display: none;
 }
 
 @media screen and (max-width: 1280px) {
@@ -465,18 +466,19 @@ section {
   #nav {
     position: fixed;
     display: block;
-    right: 5%;
-    top: 10%;
+    right: 0%;
+    top: 0%;
     background: #002c5f;
     text-align: center;
-    width: 25%;
+    width: 30%;
     line-height: 20px;
     z-index: 1000;
+    padding-left: 0;
   }
 
-  #nav>li {
-    background: #002c5f;
-    padding: 15px;
+  #nav>li:nth-child(-n + 9) {
+    background: rgb(0, 44, 95);
+    padding: 20px;
     transition: 1s;
   }
 
@@ -488,20 +490,27 @@ section {
     padding: 0;
   }
 
-  .hamBox {
+  .hamBox>a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/ham1.png);
+  }
+
+  .hamBox>.active {
+    background-image: url(../images/ham_close1.png);
+  }
+
+  #nav>.hamBox {
     position: fixed;
     display: block;
-    top: 4.5%;
+    top: 3%;
     right: 5%;
-    width: 40px;
-    height: 40px;
-    background: #002c5f;
+    width: 32px;
+    height: 32px;
     border-radius: 10px;
   }
 
-  .hamBox .hamIcon {
-    padding: 8px;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -563,8 +572,9 @@ section {
 
 @media screen and (max-width: 360px) {
   #nav {
-    width: 90%;
+    width: 100%;
     text-align: center;
+    top: 0%;
     padding-left: 0;
   }
 
